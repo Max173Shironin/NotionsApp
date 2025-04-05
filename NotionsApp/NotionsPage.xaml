@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpensesApp.ExpensesPage"
+             Title="Расходы">
+    <VerticalStackLayout>
+        <VerticalStackLayout
+            Padding="15, 0, 0, 0">
+            <HorizontalStackLayout>
+                <Label
+                    Text="Загаловок"
+                    WidthRequest="100"
+                    Margin="0, 0, 5, 10"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+                <Entry
+                    x:Name="EntryHeader"
+                    WidthRequest="225"
+                    HeightRequest="30"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Margin="0, 10, 0, 0">
+                <Label
+                   Text="Описание"
+                   WidthRequest="100"
+                   Margin="0, 0, 5, 10"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+                <Editor
+                   x:Name="DescriptionText"
+                   WidthRequest="365"
+                   HeightRequest="80"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Margin="0, 10, 0, 0">
+                <Label
+                   Text="Затраты"
+                   WidthRequest="100"
+                   Margin="0, 0, 5, 10"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+                <Entry
+                   x:Name="ExpensessText"
+                   WidthRequest="225"
+                   HeightRequest="20"/>
+            </HorizontalStackLayout>
+            <Button
+                x:Name="BtnSave"
+                Text="Сохранить"
+                WidthRequest="145"
+                Clicked="BtnSave_Clicked"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
